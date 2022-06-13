@@ -351,7 +351,9 @@ z-index: 1;
 
 .footer__column_content_copyright {
 flex-basis: 711px;
-position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 padding: 0;
 margin: 0;
 }
@@ -362,7 +364,6 @@ margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 100;
-  position: absolute;
   left: 0;
   bottom: 0;
 }
