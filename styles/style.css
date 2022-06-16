@@ -144,7 +144,7 @@
 .header__main-illustration {
 width: 765px;
 height: 608px;
-object-fit: contain;
+object-fit: cover;
 position: absolute;
 right: 0;
 bottom:0;
@@ -176,7 +176,7 @@ z-index: 1;
 
 .two-columns__brief {
   display: block;
-  min-width: 175px;
+  flex-basis: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 100;
@@ -224,7 +224,7 @@ z-index: 1;
 .feynman {
   background-color: #f2f2f2;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   z-index: 0;
   padding-top: 100px;
   box-sizing: border-box;
@@ -270,17 +270,17 @@ z-index: 1;
 .kaufman {
   background-color: #1f1f1f;
   padding: 90px 0;
-  min-height: 967px;
+  /*Удалила min-height, т.к. после верной настройки других блоков и отступов все элементы встают на свои места и необходимости указания высоты секции нет, в брифе высота секции также не указана*/
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
 
 .kaufman__triangle {
-  background-image: url(./images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
-  object-fit: contain;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: -210px;
